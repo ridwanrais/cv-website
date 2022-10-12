@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply no-underline;
+    }
+
+    html {
+        @apply scroll-smooth
+    }
+
+    body {
+        @apply 
+        font-sans
+      bg-color-bg
+        text-color-white
+        leading-relaxed
+        /* bg-[url('./assets/bg-texture.png')] */
+    }
+
+    .container {
+        @apply
+        w-container-width-lg
+        my-0 mx-auto
+        md:w-container-width-md
+        sm:w-container-width-sm
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply font-medium
+    }
+
+    h1 {
+        @apply text-4xl
+    }
+
+    section {
+        @apply 
+        mt-2
+        md:mt-24
+    }
+
+    section > h2, section > h5 {
+         @apply 
+         text-center
+         text-color-light
+    }
+
+    section >h2 {
+        @apply
+        text-color-primary
+        mb-12
+        sm:mb-8
+    }
+
+    a {
+        @apply
+        text-color-primary
+        transition-all
+    }
+
+    a:hover {
+        @apply
+        text-color-white
+    }
+
+    .btn {
+        @apply
+        w-max
+        inline-block
+        text-color-primary
+        py-3
+        px-5
+        rounded-md
+        cursor-pointer
+        border-color-primary
+        border
+        transition-all
+    }
+
+    .btn:hover {
+        @apply bg-color-white
+        text-color-bg
+        border-transparent
+    }
+
+    .btn-primary {
+        @apply 
+        bg-color-primary
+        text-color-bg
+    }
+
+    img {
+        @apply
+        w-full
+        object-cover
+    }
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+
+    /* Note: to use scrollbar none, don't forget to add  overflow-y-auto */
+}
