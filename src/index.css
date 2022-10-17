@@ -23,7 +23,7 @@
     .container {
         @apply
         w-container-width-lg
-        my-0 mx-auto
+        mb-20 mx-auto
         md:w-container-width-md
         sm:w-container-width-sm
     }
@@ -44,6 +44,7 @@
         @apply 
         mt-2
         md:mt-24
+        /* h-screen */
     }
 
     section > h2, section > h5 {
@@ -101,6 +102,13 @@
         w-full
         object-cover
     }
+
+    /* .swiper-pagination-clickable
+    .swiper-pagination-bullet {
+        @apply
+        bg-color-white
+        hidden
+    } */
 }
 
 @layer utilities {

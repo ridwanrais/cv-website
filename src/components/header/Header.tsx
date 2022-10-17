@@ -4,7 +4,7 @@ import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
   return (
-    <header className="h-screen pt-28 overflow-hidden  md:h-[68vh] sm:h-[100vh]">
+    <header className="h-screen pt-28 overflow-hidden md:h-[75vh] sm:h-[100vh]">
       <div className="container text-center h-full relative">
         <h5>Hello I'm</h5>
         <h1>Ridwan Rais</h1>

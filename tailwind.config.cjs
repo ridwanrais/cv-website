@@ -32,13 +32,13 @@ module.exports = {
       'sm': {'max': '600px'},
       // => @media ' and max-width: 767px) { ... }
 
-      'md': {'max': '1024px'},
+      'md': {'min': '601px', 'max': '1024px'},
       // => @media ' and max-width: 1023px) { ... }
 
-      'lg': {'max': '1280px'},
+      'lg': {'min': '1025px', 'max': '1280px'},
       // => @media 'x and max-width: 1279px) { ... }
 
-      'xl': {'max': '1536px'},
+      'xl': {'min': '1281px', 'max': '1536px'},
       // => @media 'x and max-width: 1535px) { ... }
 
       '2xl': {'min': '1537px'},
